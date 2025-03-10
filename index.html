@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Visualisasi Data...</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: 50px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualisasi Data Statistik Kriminal Indonesia</h1>
+    <p>Sedang memuat visualisasi data...</p>
+    <div class="loader"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load data ini akan diganti oleh output dari visualisasi.py
+            // Halaman ini hanya sebagai placeholder untuk GitHub Pages
+            // Karena GitHub Pages tidak mengeksekusi Python secara langsung
+        });
+    </script>
+    
+    <div>
+        <h2>Untuk melihat visualisasi lengkap:</h2>
+        <ol style="max-width: 600px; margin: 0 auto; text-align: left;">
+            <li>Clone repository ini ke komputer local Anda</li>
+            <li>Install dependencies: <code>pip install pandas matplotlib seaborn numpy</code></li>
+            <li>Jalankan file <code>visualisasi.py</code></li>
+            <li>Buka file <code>index.html</code> yang dihasilkan</li>
+        </ol>
+    </div>
+</body>
+</html>
